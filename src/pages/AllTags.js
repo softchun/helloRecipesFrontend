@@ -7,7 +7,7 @@ function AllTags(){
     const tags = MOCK_DATA_TAGS.data.allTags;
 
     // useEffect(() => {
-    //     axios.get(`${process.env.BASE_URL}/recipes/tags`)
+    //     axios.get(`${process.env.REACT_APP_BACKEND_URL}/recipes/tags`)
     //     .then((res) => {
     //         setRecipe(res.data.allTags);
     //     })

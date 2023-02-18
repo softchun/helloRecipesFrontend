@@ -7,7 +7,7 @@ function RecipesList({ body }) {
     const [data, setData] = useState();
 
     useEffect(() => {
-        axios.post(`https://hello-recipes-backend.herokuapp.com/recipes/search`, { body })
+        axios.post(`${process.env.REACT_APP_BACKEND_URL}/recipes/search`, { body })
             .then((res) => {
                 setData(res.data.data.recipeList)
             })

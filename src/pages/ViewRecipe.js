@@ -13,7 +13,7 @@ function ViewRecipe() {
     const [recipe, setRecipe] = useState();
 
     useEffect(() => {
-        axios.get(`https://hello-recipes-backend.herokuapp.com/recipes/info/${id}`)
+        axios.get(`${process.env.REACT_APP_BACKEND_URL}/recipes/info/${id}`)
         .then((res) => {
             setRecipe(res.data.data.recipeInfo);
         })

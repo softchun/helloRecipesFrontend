@@ -7,7 +7,7 @@ function RecipesList({ body }) {
     const [data, setData] = useState();
 
     useEffect(() => {
-        axios.post(`${process.env.REACT_APP_BACKEND_URL}/recipes/search`, { body })
+        axios.post(`https://pink-mysterious-octopus.cyclic.app/recipes/search`, { body })
             .then((res) => {
                 setData(res.data.data.recipeList)
             })
